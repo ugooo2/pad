@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .but {
+        cursor: pointer;
+        position: relative;
+        padding: 10px 24px;
+        font-size: 19px;
+        color: #000000;
+        border: 1px solid #ffffff;
+        border-radius: 34px;
+        background-color: transparent;
+        font-weight: 600;
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+        overflow: hidden;
+    }
+
+    .but::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: inherit;
+        scale: 0;
+        z-index: -1;
+        background-color: #ffffff;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    .but:hover::before {
+        scale: 3;
+    }
+
+    .but:hover {
+        color: #212121;
+        scale: 1.1;
+        box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+    }
+
+    .but:active {
+        scale: 1;
+    }
+</style>
+
+<body>
+    <div style="width: 100%; height:1000PX; background: linear-gradient(to right,pink,blue);">
+        <nav class="hide-on-med-and-down " style="background-color: transparent;">
+            <div class="container">
+                <ul class="right">
+                    <li><a href="" style="color: white;">Home</a></li>
+                    <li><a href="" style="color: white;">About us</a></li>
+                    <li><a href="" style="color: white;">Contant us</a></li>
+                    <li><a href="" style="color: white;">Get Started</a></li>
+
+                </ul>
+
+                <ul>
+                    <i class="fa fa-gamepad" aria-hidden="true"
+                        style="font-size: 50px;padding-top: 10px; color: rgb(81, 81, 120);"></i>
+                </ul>
+            </div>
+        </nav>
+        <nav class=" hide-on-large-only" style="background-color: transparent;">
+            <ul id="slide-out" class="sidenav">
+                <li><a href="" style="color: black;">Home</a></li>
+                <li><a href="" style="color: black;">About us</a></li>
+                <li><a href="" style="color: black;">Contant us</a></li>
+                <li><a href="" style="color: black;">Get Started</a></li>
+
+            </ul>
+            <div class="row">
+                <div class="col m4 s8">
+                    <div class="container">
+                        <ul class="" style="display: inline;">
+                            <i class="fa fa-gamepad" aria-hidden="true"
+                                style="font-size: 50px;padding-top: 5px; color: rgb(81, 81, 120);"></i>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col m4 s"></div> -->
+                <div class="col m4 s4"><a class="sidenav-trigger right" href="" data-target="slide-out"> <i
+                            class="fa-solid fa-bars"></i></a></div>
+            </div>
+
+
+
+        </nav>
+
+
+
+
+
+        <div class="row container">
+            <div class="col l5">
+                <h1 style="font-weight: 800; font-size: 90px; color: white; line-height: 1px; margin-top: 50%;">JOY<span
+                        style="font-weight: 700;">stick</span></h1>
+                <h2 style="font-weight: 700;">Dualshock 5</h2>
+                <p style="text-align:justify ; color: white;font-size: 15px;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Officia sequi veritatis nisi? Magnam tempora, eius rerum dolore incidunt sapiente
+                    magni minus? Eaque adipisci magnam distinctio modi officiis dolorum earum nam.</p>
+                <button class="but">
+                    BUYNOW
+                </button>
+                <button class="but">
+                    CHART
+                </button>
+            </div>
+
+            <div class="col l7">
+                <div data-aos="fade-down-left"  data-aos-duration="1000">
+                     <img
+                        src="img/abstract-colorful-pastel-color-cloud-on-transparent-background-colorful-ink-diffusion-in-water-generative-ai-png.png__1920_1536__and_5_more_pages_-_Profile_2_-_Microsoft__Edge_23_10_2024_14_20_13-remo.png"
+                        alt="" width="100%" style=" position:absolute; margin-top: 20%; left: 40%;">
+                </div>
+
+                <div data-aos="fade-up-left"  data-aos-duration="1000" >
+                    <img src="img/padd.png" alt="" width="100%" style="position: relative; margin-top: 19%;left: 40%;">
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="materialize/js/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+
+</html>
